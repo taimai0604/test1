@@ -1,0 +1,24 @@
+<!-- <h1>My First Attribute Directive</h1>
+
+<h4>Pick a highlight color</h4>
+<div>
+  <input type="radio" name="colors" (click)="color='lightgreen'">Green
+  <input type="radio" name="colors" (click)="color='yellow'">Yellow
+  <input type="radio" name="colors" (click)="color='cyan'">Cyan
+</div>
+<p [appTestDirective]="color">Highlight me!</p>
+
+<p [appTestDirective]="color" defaultColor="violet">
+  Highlight me too!
+</p>
+
+<hr>
+<p><i>Mouse over the following lines to see fixed highlights</i></p>
+
+<p [appTestDirective]="'yellow'">Highlighted in yellow</p>
+<p appTestDirective>Highlighted in orange</p>
+-->
+<p>Total price of product is {{ price | currency:"USA" }}</p> 
+<button (click)="getEnum()">test</button>
+<label for="">{{testValue}}</label>
+<router-outlet></router-outlet>

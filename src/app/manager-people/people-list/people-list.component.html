@@ -1,0 +1,8 @@
+{{title}}
+<ul>
+  <!-- <li *ngFor="let people of peoples" (click)="selectPerson(people)">{{people.name}}</li> -->
+  <li *ngFor="let people of peoples" ><a href="#" [routerLink]="['/person', people.id]">{{people.name}}</a></li>
+</ul>
+<button (click)="closePerson()" *ngIf="selectedPerson != null">close</button>
+
+<!-- <app-person-detail [person]="selectedPerson"></app-person-detail> -->
